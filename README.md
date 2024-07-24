@@ -1,9 +1,9 @@
-# cradleptinfoinfo - Display Cradlepoint data acquired from UDP broadcasts to screen
+# cradleptinfoinfo - Display Cradlepoint data acquired from http queries to screen
 
 This program (named) was developed for the [IEEE MOVE project](https://move.ieee.org).
 
-The program receives UDP broadcast packets from [Cradlepoint MG90](https://www.sierrawireless.com/products-and-solutions/routers-gateways/mg90/) and 
-displays them to the screen.
+The program acquires data from [Cradlepoint modems like the R1900](https://cradlepoint.com/product/endpoints/r1900-series/) using http and 
+displays it to the screen.
 
 
 
@@ -11,7 +11,7 @@ displays them to the screen.
 flowchart LR
 B[Verizon LTE Signal] --> A[Cradlepoint Multi-Network Vehicle Router]
 ATT[AT&T LTE Signal] --> A
-A -.UDP Broadcast.-> C[LteInfo App]
+A <-.http rest.-> C[LteInfo App]
 D[www.timeapi.io] <-.web service for tz.-> C
 C --> Display
 
