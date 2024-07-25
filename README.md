@@ -3,7 +3,7 @@
 This program (named) was developed for the [IEEE MOVE project](https://move.ieee.org).
 
 The program acquires data from [Cradlepoint modems like the R1900](https://cradlepoint.com/product/endpoints/r1900-series/) using http and 
-displays it to the screen.
+displays it to the screen.  This is an incomplete effort as a decision was made to switch the architecture to one where the display is done through a web app.
 
 
 
